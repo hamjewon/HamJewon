@@ -1,0 +1,143 @@
+<!DOCTYPE html> <!--22061124 함제원-->
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body{
+        font-family: Arial;
+        padding: 10px;
+        background: #FFE9FC;
+      }
+
+      .header {
+        padding: 30px;
+        text-align: center;
+        background: white;
+      }
+
+      .header h1 {
+        font-size: 50px;
+        color: #F76390;
+      }
+
+      .topnav {
+         overflow: hidden; /* hidden, visible, scroll, auto */
+         background-color: #F76390;
+       }
+
+      .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      .topnav a:hover {
+        background-color: #FFE9FC;
+        color: #F76390;
+      }
+
+      .leftcolumn {
+        float: left;
+        width: 100%;
+      }
+
+      .rightcolumn {
+        float: left;
+        width: 25%;
+        background-color: #f1f1f1;
+        padding-left: 20px;
+      }
+
+
+
+      .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      .row:after {  /*before*/
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .footer {
+          padding : 20px;
+          color: white;
+          text-align : center;
+          background : #F76390;
+          margin-top : 20px;
+        }
+
+      @media screen and (max-width: 800px) {
+        .leftcolumn, .rightcolumn {
+          width: 100%;
+          padding: 0;
+        }
+      }
+
+      @media screen and (max-width: 400px) {
+        .topnav a {
+          float: none;
+          width: 100%;
+        }
+      }
+      a{
+       text-decoration : none;
+       color : black;
+     }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1><a href='index.html'>My Workspace</a></h1>
+      <p>디미디에서 살아남기.. 과제와 함께한 함제원의 1년을 돌아보자</p>
+    </div>
+
+    <div class="topnav">
+      <a href='1-1M.html'>1-1 M</a>
+      <a href='1-1F.html'>1-1 F</a>
+      <a href='1-2M.html'>1-2 M</a>
+      <a href="#" style="float:right">  <a href='index1.html'> ? </a></a>
+    </div>
+
+    <div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        <h2>Tarot Card project</h2>
+        <h5>Foundation of Drawing 2st project, Jul 7, 2020</h5>
+        <div class style="height:200px;"><img src='img/1-2.jpg'></div>
+        <p>1학기 기초드로잉 과목에서 진행한 두번째 직무수행능력평가이다. </p>
+        <p>'과거로 돌아간 나'를 주제로, 현재의 내가 과거의 나를 바꾸며 진행되는 이야기를 열 장의 타로카드에 담았다.</p>
+        </div>
+
+  <div class="card">
+        <h2>The Way Others See Me & The Real Me</h2>
+        <h5>Foundation of Design 1st project, Jul 6, 2020</h5>
+        <div class style="height:400px;"><img src='img/1-2(2).jpg'></div>
+        <p>1학기 기초 디자인 과목에서 진행한 두번째 직무수행능력평가이다. </p>
+        <p>직접 찍은 사진을 사용한 남들이 보는 나의 모습과 실제 나의 모습을 비교한 본인 소개 웹사이트를 만들었다.</p>
+        </div>
+  </div>
+
+  <div class="rightcolumn">
+
+
+     </div><!-- </div>class=row 는 cloumn다음에 float해제시키는 css가 있으므로 footer전에 float해제를 css에 넣어놓은것임 -->
+    </div>
+
+
+    <div class="footer">
+      <h6>Copyright 2020. Ham je won. all rights reserved</h6>
+    </div>
+
+  </body>
+</html>
